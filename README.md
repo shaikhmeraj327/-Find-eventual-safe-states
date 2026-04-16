@@ -4,9 +4,7 @@ Given a directed graph with `V` vertices numbered from `0` to `V - 1` and direct
 
 A node is safe if every path starting from it eventually ends at a terminal node (a node with no outgoing edges).
 
-Implementation is available in:
-
-- `/home/runner/work/-Find-eventual-safe-states/-Find-eventual-safe-states/safe_nodes.py`
+Implementation is available in `safe_nodes.py`.
 
 Run tests with:
 

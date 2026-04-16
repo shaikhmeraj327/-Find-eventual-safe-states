@@ -2,12 +2,10 @@ from collections import deque
 
 
 def eventual_safe_nodes(vertices, edges):
-    graph = [[] for _ in range(vertices)]
     reverse_graph = [[] for _ in range(vertices)]
     out_degree = [0] * vertices
 
     for source, target in edges:
-        graph[source].append(target)
         reverse_graph[target].append(source)
         out_degree[source] += 1
 
