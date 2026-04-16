@@ -22,6 +22,8 @@ class SafeNodesTests(unittest.TestCase):
         vertices = 4
         edges = [[0, 1], [1, 2], [2, 1], [2, 3]]
         self.assertEqual(eventualSafeNodes(vertices, 3, edges), [3])
+        self.assertEqual(eventualSafeNodes(vertices, len(edges), edges), [3])
+        self.assertEqual(eventualSafeNodes(vertices, 2, edges), [0, 1, 2, 3])
 
 
 if __name__ == "__main__":

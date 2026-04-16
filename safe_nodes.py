@@ -25,8 +25,7 @@ def eventual_safe_nodes(vertices, edges):
 
 
 def eventualSafeNodes(vertices, edge_count, edges):
-    if edge_count < len(edges):
-        edges = edges[:edge_count]
+    edges = edges[:edge_count]
     return eventual_safe_nodes(vertices, edges)
 
 
