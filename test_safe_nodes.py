@@ -18,6 +18,11 @@ class SafeNodesTests(unittest.TestCase):
         edges = [[0, 1], [1, 2], [2, 1], [2, 3]]
         self.assertEqual(eventual_safe_nodes(vertices, edges), [3])
 
+    def test_edge_count_limits_processed_edges(self):
+        vertices = 4
+        edges = [[0, 1], [1, 2], [2, 1], [2, 3]]
+        self.assertEqual(eventualSafeNodes(vertices, 3, edges), [3])
+
 
 if __name__ == "__main__":
     unittest.main()
